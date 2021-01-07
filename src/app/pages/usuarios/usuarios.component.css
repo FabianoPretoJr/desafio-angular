@@ -1,3 +1,18 @@
+.container {
+  margin: 70px;
+}
+
+.container span {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 1.4rem;
+}
+
+.container span .icone {
+  padding-right: 25px;
+}
+
 table {
   width: 100%;
 }
