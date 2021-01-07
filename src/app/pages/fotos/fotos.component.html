@@ -4,7 +4,7 @@
     </span>
     <div class="card">
       <mat-card *ngFor="let foto of fotos | async" class="card-content mat-elevation-z4" matSort>
-        <img mat-card-image src="{{ foto.thumbnailUrl }}" alt="foto">
+        <img class="image" mat-card-image src="{{ foto.thumbnailUrl }}" alt="foto">
         <mat-card-content>
           <p>
             {{ foto.title }}
