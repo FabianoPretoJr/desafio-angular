@@ -20,6 +20,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { LoginComponent } from './pages/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
     HeaderComponent,
     HomeComponent,
     UsuariosComponent,
-    FotosComponent
+    FotosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    ReactiveFormsModule
   ],
   providers: [
     { provide: MAT_DIALOG_DATA, useValue: {} }
