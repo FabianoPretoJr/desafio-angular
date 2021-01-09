@@ -7,30 +7,30 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  form;
+  // form;
 
-  constructor(private formBuilder:FormBuilder) { 
-    this.criarForm();
-  }
+  // constructor(private formBuilder:FormBuilder) { 
+  //   this.criarForm();
+  // }
 
-  criarForm() {
-    this.form = this.formBuilder.group({
-      email: [''],
-      senha: ['']
-    });
-  }
+  // criarForm() {
+  //   this.form = this.formBuilder.group({
+  //     email: [''],
+  //     senha: ['']
+  //   });
+  // }
 
-  emailDB: string = "email@teste.com";
-  senhaDB: string = "12345678";
-  mensagem: string;
+  // emailDB: string = "email@teste.com";
+  // senhaDB: string = "12345678";
+  // mensagem: string;
 
-  login()
-  {
-    if (this.form.get('email').value == this.emailDB && this.form.get('senha').value == this.senhaDB) {
-      this.mensagem = "Login feito com sucesso!";
-    } else {
-      this.mensagem = "E-mail ou a senha estar errado!";
-    }
+  // login()
+  // {
+  //   if (this.form.get('email').value == this.emailDB && this.form.get('senha').value == this.senhaDB) {
+  //     this.mensagem = "Login feito com sucesso!";
+  //   } else {
+  //     this.mensagem = "E-mail ou a senha estar errado!";
+  //   }
   }
 
   // verificado = false;
@@ -53,4 +53,4 @@ export class LoginComponent {
   //   console.log("ola senha");
   // }
 
-}
+// }
